@@ -23,8 +23,7 @@ Scenario Outline: Enter numeral
 		| 9       |
 		| 0       |
 
-
-	Scenario Outline: Start to enter data with dot
+Scenario Outline: Start to enter data with dot
 	When I press "." button
 	When I press  <numeral> button
 	Then  0.<numeral> should be in the enter field
@@ -41,7 +40,8 @@ Scenario Outline: Enter numeral
 		| 8       |
 		| 9       |
 		| 0       |
-	Scenario Outline: Enter dot after 1 symbol
+
+Scenario Outline: Enter dot after 1 symbol
 	When I press  <numeral> button
 	When I press "." button
 	When I press  <numeral> button
@@ -59,7 +59,8 @@ Scenario Outline: Enter numeral
 		| 8       |
 		| 9       |
 		| 0       |
-	Scenario Outline: Enter dot after 14 symbols
+
+Scenario Outline: Enter dot after 14 symbols
 	When I press  <numeral> button x14 times
 	When I press "." button
 	When I press  <numeral> button
@@ -77,7 +78,8 @@ Scenario Outline: Enter numeral
 		| 8       |
 		| 9       |
 		| 0       |
-	Scenario Outline: Enter dot after 13 symbols
+
+Scenario Outline: Enter dot after 13 symbols
 	When I press  <numeral> buttonx13 times
 	When I press "." button
 	When I press  <numeral> button
@@ -100,7 +102,6 @@ Scenario: Delete numbers from empty field
 	When I press "AC" button
 	Then the enter field should be empty
 
-	
 Scenario Outline: Delete numbers from enter field after 1 entered symbol
 	When I press  <numeral> button
 	When I press "AC" button
@@ -118,7 +119,8 @@ Scenario Outline: Delete numbers from enter field after 1 entered symbol
 		| 8       |
 		| 9       |
 		| 0       |
-	Scenario Outline: Delete numbers from enter field after 15 entered symbols
+
+Scenario Outline: Delete numbers from enter field after 15 entered symbols
 	When I press  <numeral> buttonx15 times
 	When I press "AC" button
 	Then the enter field should be empty
@@ -135,7 +137,8 @@ Scenario Outline: Delete numbers from enter field after 1 entered symbol
 		| 8       |
 		| 9       |
 		| 0       |
-	Scenario Outline: Delete numbers from enter field after 16 entered symbols
+
+Scenario Outline: Delete numbers from enter field after 16 entered symbols
 	When I press  <numeral> buttonx16 times
 	When I press "AC" button
 	Then the enter field should be empty
@@ -154,8 +157,8 @@ Scenario Outline: Delete numbers from enter field after 1 entered symbol
 		| 0       |
 
 Scenario Outline: Number is bigger than the limit
-	When I press  <numeral> button x17 times 
-	Then <numeral>x16 times should be on the screen 
+	When I press  <numeral> button x17 times
+	Then <numeral>x16 times should be on the screen
 
 	Examples:
 		| numeral |
