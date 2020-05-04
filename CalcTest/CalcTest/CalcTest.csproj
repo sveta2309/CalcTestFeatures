@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Features\EnterData.feature" />
+    <None Include="Features\SumFunction.feature" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
