@@ -60,43 +60,43 @@ Scenario Outline: Enter dot after 1 symbol
 		| 9       |
 		| 0       |
 
-Scenario Outline: Enter dot after 14 symbols
-	When I press  <numeral> button x14 times
-	When I press "." button
-	When I press  <numeral> button
-	Then  <numeral>x14.<numeral> should be in the enter field
-
-	Examples:
-		| numeral |
-		| 1       |
-		| 2       |
-		| 3       |
-		| 4       |
-		| 5       |
-		| 6       |
-		| 7       |
-		| 8       |
-		| 9       |
-		| 0       |
-
-Scenario Outline: Enter dot after 13 symbols
-	When I press  <numeral> buttonx13 times
-	When I press "." button
-	When I press  <numeral> button
-	Then  <numeral>x13.<numeral> should be in the enter field
-
-	Examples:
-		| numeral |
-		| 1       |
-		| 2       |
-		| 3       |
-		| 4       |
-		| 5       |
-		| 6       |
-		| 7       |
-		| 8       |
-		| 9       |
-		| 0       |
+#Scenario Outline: Enter dot after 14 symbols
+#	When I press  <numeral> button x14 times
+#	When I press "." button
+#	When I press  <numeral> button
+#	Then  <numeral>x14.<numeral> should be in the enter field
+#
+#	Examples:
+#		| numeral |
+#		| 1       |
+#		| 2       |
+#		| 3       |
+#		| 4       |
+#		| 5       |
+#		| 6       |
+#		| 7       |
+#		| 8       |
+#		| 9       |
+#		| 0       |
+#
+#Scenario Outline: Enter dot after 13 symbols
+#	When I press  <numeral> buttonx13 times
+#	When I press "." button
+#	When I press  <numeral> button
+#	Then  <numeral>x13.<numeral> should be in the enter field
+#
+#	Examples:
+#		| numeral |
+#		| 1       |
+#		| 2       |
+#		| 3       |
+#		| 4       |
+#		| 5       |
+#		| 6       |
+#		| 7       |
+#		| 8       |
+#		| 9       |
+#		| 0       |
 
 Scenario: Delete numbers from empty field
 	When I press "AC" button
@@ -120,55 +120,55 @@ Scenario Outline: Delete numbers from enter field after 1 entered symbol
 		| 9       |
 		| 0       |
 
-Scenario Outline: Delete numbers from enter field after 15 entered symbols
-	When I press  <numeral> buttonx15 times
-	When I press "AC" button
-	Then the enter field should be empty
+#Scenario Outline: Delete numbers from enter field after 15 entered symbols
+#	When I press  <numeral> buttonx15 times
+#	When I press "AC" button
+#	Then the enter field should be empty
+#
+#	Examples:
+#		| numeral |
+#		| 1       |
+#		| 2       |
+#		| 3       |
+#		| 4       |
+#		| 5       |
+#		| 6       |
+#		| 7       |
+#		| 8       |
+#		| 9       |
+#		| 0       |
+#
+#Scenario Outline: Delete numbers from enter field after 16 entered symbols
+#	When I press  <numeral> buttonx16 times
+#	When I press "AC" button
+#	Then the enter field should be empty
+#
+#	Examples:
+#		| numeral |
+#		| 1       |
+#		| 2       |
+#		| 3       |
+#		| 4       |
+#		| 5       |
+#		| 6       |
+#		| 7       |
+#		| 8       |
+#		| 9       |
+#		| 0       |
 
-	Examples:
-		| numeral |
-		| 1       |
-		| 2       |
-		| 3       |
-		| 4       |
-		| 5       |
-		| 6       |
-		| 7       |
-		| 8       |
-		| 9       |
-		| 0       |
-
-Scenario Outline: Delete numbers from enter field after 16 entered symbols
-	When I press  <numeral> buttonx16 times
-	When I press "AC" button
-	Then the enter field should be empty
-
-	Examples:
-		| numeral |
-		| 1       |
-		| 2       |
-		| 3       |
-		| 4       |
-		| 5       |
-		| 6       |
-		| 7       |
-		| 8       |
-		| 9       |
-		| 0       |
-
-Scenario Outline: Number is bigger than the limit
-	When I press  <numeral> button x17 times
-	Then <numeral>x16 times should be on the screen
-
-	Examples:
-		| numeral |
-		| 1       |
-		| 2       |
-		| 3       |
-		| 4       |
-		| 5       |
-		| 6       |
-		| 7       |
-		| 8       |
-		| 9       |
-		| 0       |
+#Scenario Outline: Number is bigger than the limit
+#	When I press  <numeral> button x17 times
+#	Then <numeral>x16 times should be on the screen
+#
+#	Examples:
+#		| numeral |
+#		| 1       |
+#		| 2       |
+#		| 3       |
+#		| 4       |
+#		| 5       |
+#		| 6       |
+#		| 7       |
+#		| 8       |
+#		| 9       |
+#		| 0       |
